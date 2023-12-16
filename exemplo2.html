@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div input{
+            appearance: none;
+            background-color: green;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="botao1" onclick="click1()">botao1</div>
+    <div><input type="button" id="botao1" value="1" onclick="click1()"></div>
+    <div><input type="button" id="botao2" value="2"></div>
+    
+    <script>
+        function click1(){
+            alert("Clicou!");
+        }
+
+        let click2 = document.getElementById("botao2")
+        click2.addEventListener("click", function(){
+            alert("Clicou!");
+        });
+
+    </script>
+</body>
+</html>

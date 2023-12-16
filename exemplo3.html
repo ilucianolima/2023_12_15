@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      div {
+        display: flex;
+        width: 15px;
+        height: 10px;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="funcao()">
+      <input
+        type="text"
+        id="elemento1"
+      />
+      <input
+        type="text"
+        id="elemento2"
+      />
+    </div>
+
+    <script>
+      function funcao() {
+        let id_elemento = document.activeElement.id
+        alert("O id do elemento é: " + id_elemento)
+      }
+    </script>
+  </body>
+</html>

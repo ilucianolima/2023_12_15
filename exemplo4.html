@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <img id="imagem">
+    <img id="imagem2">
+    <button id="botao">Imagem</button>
+    <button id="botao2">Botao</button>
+
+    <script>
+
+        let botao = document.querySelector("#botao");
+        let imagem = document.querySelector("#imagem");
+        let botao2 = document.querySelector("#botao2")
+        let imagem2 = document.querySelector("#imagem2")
+
+        botao.addEventListener("click", function(){
+        let atributo = document.createAttribute('src')
+            atributo.value = "lobo.jpg"
+            imagem.setAttributeNode(atributo)
+
+            imagem2.src = "lobo.jpg";
+        })
+    </script>
+</body>
+</html>

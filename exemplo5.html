@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <input type="text" id="texto">
+    <input type="button" value="Clique!" id="botao">
+    
+    <script>
+        let texto = document.getElementById("texto")
+        let botao = document.getElementById("botao")
+
+        botao.addEventListener("click", function(){
+            texto.value = "Que banaca!"
+            botao.value = "Supimpa"
+        });
+    </script>
+</body>
+</html>
